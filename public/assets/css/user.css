@@ -1,0 +1,141 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Utilities */
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-bg {
+    height: 30px;
+    width: 100px;
+}
+
+.btn-success {
+    background-color: #1db954;
+    color: white;
+    border: none;
+}
+
+.list-group {
+    list-style: none;
+
+    padding: 0px;
+}
+
+.list-item {
+    text-align: left;
+}
+
+.float-left {
+    float: left;
+}
+
+.error-message {
+    font-size: 12px;
+}
+
+/* main layout design */
+
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/images/background/bg.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+.main-content {
+    padding-top: 100px;
+}
+
+.left-section {
+    width: 40%;
+    padding-right: 30px;
+    float: left;
+}
+.right-section {
+    width: 60%;
+    float: right;
+
+    border-left: 1px solid #555;
+}
+
+/* login-form style */
+
+#login-form input {
+    background: transparent;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid;
+}
+#login-form label {
+    margin-bottom: 10px;
+}
+
+#login-form .form-group {
+    margin-bottom: 10px;
+}
+
+#login-form.form-box {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #cac1c1;
+}
+
+.form-group a {
+    color: #cac1c1;
+    font-size: 12px;
+}
+
+/* right-section style */
+.right-section {
+    padding-left: 20px;
+}
+.right-section .list-div {
+    margin-top: 50px;
+}
+.right-section .check-mark {
+    background-image: url("/assets/images/icons/checkmark.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.right section ul {
+    margin-left: 45px;
+}
+
+.right-section li {
+    padding-left: 22px;
+}
+
+.right-section .title h2,
+p {
+    color: #1db954;
+}
