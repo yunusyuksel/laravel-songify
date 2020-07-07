@@ -13,12 +13,58 @@
     <div class="main-wrapper">
         <div class="top-layout">
             <div class="left-layout">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="{{asset('/assets/images/icons/werewolf.png')}}" width="64px" height="64px" alt="">
+                        <span style="color:white;font-size:16px">Songify</span>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="{{route('home')}}"><img src="/assets/images/icons/home-active.png" width="25px"
+                                height="25px" alt="">
+                            <span style="padding-left:10px "> Start </span> </a>
+                    </div>
 
+                    <div class="navbar-item">
+                        <a href="{{route('home')}}"><img src="/assets/images/icons/search.png" width="25px"
+                                height="25px" alt="">
+                            <span style="padding-left:10px "> Search </span> </a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="{{route('home')}}"><img src="/assets/images/icons/music-library.png" width="25px"
+                                height="25px" alt="">
+                            <span style="padding-left:10px "> Library </span> </a>
+                    </div>
+
+                </div>
             </div>
 
             <div class="right-layout">
+                <div class="right-content">
+                    <h3>Just Listened</h3>
+                    <a href="/album/1">
+                        <div class="album-grid">
+                            <div class="album-card">
+                                <img src="/assets/images/artwork/KillAll.jpg" alt="">
+                                <p>Kill'm All</p>
+                                <span></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="album-grid">
+                        <div class="album-card">
+                            <img src="/assets/images/artwork/KillAll.jpg" alt="">
+                            <p>Kill'm All</p>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
+
+
         </div>
         <div class="bottom-layout">
             <div class="playing-bar">
