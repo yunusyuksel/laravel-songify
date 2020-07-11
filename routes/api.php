@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('songs','song\SongController@index');
+
+Route::get('songs/{songid}','song\SongController@show');
+
+Route::get('albums','AlbumApiController@index');
+Route::get('albums/{albumId}','AlbumApiController@show');
+
+Route::get('artists','artists\ArtistController@index');
+Route::get('artists/{artistId}','artists\ArtistController@show');
+
+

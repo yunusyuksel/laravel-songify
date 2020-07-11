@@ -9,6 +9,12 @@ body {
     box-sizing: border-box;
 }
 
+/* utilities */
+
+.text-center {
+    text-align: center;
+}
+
 /* top-layout */
 
 /* top-left layout */
@@ -101,6 +107,21 @@ body {
     width: 96;
     height: 128px;
     border-radius: 30%;
+}
+
+.information-content {
+    padding: 30px;
+}
+
+.img-section {
+    display: flex;
+}
+
+.info-section {
+    margin: 0px 50px;
+    width: 100%;
+
+    color: white;
 }
 
 /* bottom layout design */
@@ -220,4 +241,44 @@ body {
     width: 94%;
     height: 5px;
     background-color: #b3b3b3;
+}
+
+/* song table layout design */
+
+.play-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.play-btn-div {
+    width: 10%;
+    display: none;
+}
+
+.song-list {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+.song-item {
+    padding: 20px 0px;
+    text-decoration: none;
+    display: flex;
+}
+
+.song-count {
+    width: 10%;
+}
+
+.song-item:hover {
+    background-color: #282828;
+}
+
+.song-item:hover .play-btn-div {
+    display: inline-block;
+}
+
+.song-item:hover .song-count {
+    display: none;
 }

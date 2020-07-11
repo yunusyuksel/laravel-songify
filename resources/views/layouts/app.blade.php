@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Songify</title>
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/includes/js/app.js"></script>
 </head>
 
 <body>
@@ -39,27 +41,9 @@
             </div>
 
             <div class="right-layout">
-                <div class="right-content">
-                    <h3>Just Listened</h3>
-                    <a href="/album/1">
-                        <div class="album-grid">
-                            <div class="album-card">
-                                <img src="/assets/images/artwork/KillAll.jpg" alt="">
-                                <p>Kill'm All</p>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
 
-                    <div class="album-grid">
-                        <div class="album-card">
-                            <img src="/assets/images/artwork/KillAll.jpg" alt="">
-                            <p>Kill'm All</p>
-                            <span></span>
-                        </div>
-                    </div>
+                @yield('content')
 
-                </div>
 
 
             </div>
@@ -68,32 +52,26 @@
         </div>
         <div class="bottom-layout">
             <div class="playing-bar">
-                <div class="info-bar">
-                    <img id="album-img-info" src="assets/images/artwork/KillAll.jpg" alt="" width="56px" height="56px">
-                    <div class="song-info">
-                        <span id="song-name-info">Song asdsadsadsadsadsa</span> <br>
-                        <span id="artist-name-info">Artist adasdadsa , sadsadsadsa</span>
-                    </div>
+                @yield('bar-info')
 
-                </div>
                 <div class="player-buttons-bar">
 
 
                     <div class="player-controls-buttons">
-                        <button class="player-btn shuffle-btn">
+                        <button class="player-btn shuffle-btn" onclick="shuffleList">
                             <img src="/assets/images/icons/shuffle.png" alt="" width="25px" height="25px">
                         </button>
 
-                        <button class="player-btn previous-btn">
+                        <button class="player-btn previous-btn" onclick="loadPreviosSong">
                             <img src="/assets/images/icons/previous.png" alt="" width="25px" height="25px">
                         </button>
 
-                        <button class="player-btn play-btn">
+                        <button class="player-btn play-btn" onclick="playSong">
                             <img src="/assets/images/icons/play.png" alt="" width="25px" height="25px">
                         </button>
 
 
-                        <button class="player-btn pause-btn">
+                        <button class="player-btn pause-btn" onclick="pauseSong">
                             <img src="/assets/images/icons/pause.png" alt="" width="25px" height="25px">
                         </button>
 
@@ -140,6 +118,10 @@
             </div>
         </div>
     </div>
+
+
+
+
 </body>
 
 </html>

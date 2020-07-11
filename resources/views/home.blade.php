@@ -1,23 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
 
-                    {{ __('You are logged in!') }}
-                </div>
+
+<div class="right-content">
+    <h3>Just Listened</h3>
+    @foreach($albums as $album)
+    <a href="/album/{{$album->id}}">
+        <div class="album-grid">
+            <div class="album-card">
+                <img src="/assets/albums{{$album->img_path}}" alt="">
+                <p>{{$album->title}}</p>
+                <span></span>
             </div>
         </div>
-    </div>
+    </a>
+    @endforeach
+
+
 </div>
+
 @endsection
